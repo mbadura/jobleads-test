@@ -1,0 +1,23 @@
+.c-container {
+    $self: &;
+    $prefix: 'container';
+
+    width: 100%;
+    min-height: calc( 100% - #{$footer-height} );
+    padding: 0;
+
+    @include md {
+        padding: 33px;
+    }
+
+    &--with-background {
+        background: #FFF;
+
+        @include md {
+            background: url(../img/mood.jpg) no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+    }
+
+}
